@@ -1,0 +1,242 @@
+<!--
+  Nama  : Muhammad Ihsanul Anwar
+  NIM   : 250401010592
+  Kelas : IF 203
+  Matkul: Pemrograman Web I
+-->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Muhammad Ihsanul Anwar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body { background-color: #f8f9fa; }
+    .hero { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: white; padding: 60px 0; }
+    .section-title { border-left: 4px solid #1a73e8; padding-left: 12px; margin-bottom: 24px; }
+    .card { border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 12px; }
+    .foto-profil { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 4px solid white; }
+    .badge-skill { background-color: #e8f0fe; color: #1a73e8; font-weight: 500; padding: 6px 14px; border-radius: 20px; display: inline-block; margin: 4px; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER / PROFIL ===== -->
+  <section class="hero text-center">
+    <!-- Foto profil -->
+    <img
+      src="foto.jpg"
+      alt="Foto Muhammad Ihsanul Anwar"
+      class="foto-profil mb-3"
+      onerror="this.src='https://ui-avatars.com/api/?name=Muhammad+Ihsanul+Anwar&size=150&background=1a73e8&color=fff'"
+    />
+    <h1 class="fw-bold">Muhammad Ihsanul Anwar</h1>
+    <p>
+      <!-- Link media sosial -->
+      <a href="https://instagram.com/ihsanulanwar" target="_blank" class="btn btn-light btn-sm me-2">
+        📷 Instagram
+      </a>
+      <a href="mailto:ihsanul@email.com" class="btn btn-outline-light btn-sm">
+        ✉️ Email
+      </a>
+    </p>
+  </section>
+
+  <div class="container my-5">
+
+    <!-- ===== TENTANG SAYA ===== -->
+    <section id="tentang" class="mb-5">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="card p-4">
+        <!-- Paragraf 1: perkenalan -->
+        <p>
+          Halo! Nama saya <strong>Muhammad Ihsanul Anwar</strong>, 
+          Saya memiliki ketertarikan besar di bidang teknologi dan pemrograman, 
+          serta selalu bersemangat untuk terus belajar hal-hal baru di dunia digital.
+        </p>
+        <!-- Paragraf 2: karakter dan motivasi -->
+        <p>
+          Saya adalah pribadi yang <u>disiplin, cekatan, dan bertanggung jawab</u>. 
+          Saya percaya bahwa dengan kerja keras dan semangat belajar yang tinggi, 
+          setiap tantangan dapat dihadapi dengan baik. Saat waktu luang, saya 
+          senang berolahraga, membaca, dan mengeksplorasi teknologi baru.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== KELEBIHAN & KEKURANGAN ===== -->
+    <section id="kelebihan-kekurangan" class="mb-5">
+      <h2 class="section-title">Kelebihan & Kekurangan</h2>
+      <div class="row g-4">
+
+        <!-- Kelebihan -->
+        <div class="col-md-6">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold text-success mb-3">✅ Kelebihan</h5>
+            <!-- List kelebihan -->
+            <ol>
+              <li>Cekatan dan inisiatif dalam bekerja</li>
+              <li>Disiplin dan rapi dalam bekerja</li>
+              <li>Bertanggung jawab terhadap pekerjaan</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Kekurangan -->
+        <div class="col-md-6">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold text-danger mb-3">⚠️ Kekurangan</h5>
+            <!-- List kekurangan -->
+            <ol>
+              <li>Belum banyak pengalaman</li>
+              <li>Kurang memahami bahasa asing</li>
+              <li>Kurang percaya kepada orang lain</li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== HOBI ===== -->
+    <section id="hobi" class="mb-5">
+      <h2 class="section-title">Hobi</h2>
+      <div class="card p-4">
+        <!-- List hobi -->
+        <ul>
+          <li>🏃 Olahraga</li>
+          <li>📚 Membaca</li>
+          <li>💻 Belajar hal baru</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== KEAHLIAN ===== -->
+    <section id="keahlian" class="mb-5">
+      <h2 class="section-title">Keahlian</h2>
+      <div class="card p-4">
+        <!-- Badge skill -->
+        <span class="badge-skill">HTML</span>
+        <span class="badge-skill">CSS</span>
+        <span class="badge-skill">Bootstrap</span>
+        <span class="badge-skill">Microsoft Office</span>
+        <span class="badge-skill">Problem Solving</span>
+      </div>
+    </section>
+
+    <!-- ===== RIWAYAT PENDIDIKAN ===== -->
+    <section id="pendidikan" class="mb-5">
+      <h2 class="section-title">Riwayat Pendidikan</h2>
+      <div class="card p-4">
+        <!-- Tabel pendidikan -->
+        <table class="table table-bordered table-striped">
+          <thead class="table-primary">
+            <tr>
+              <th>Jenjang</th>
+              <th>Nama Sekolah</th>
+              <th>Tahun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SD</td>
+              <td>SDN Krembangan Selatan VII Surabaya</td>
+              <td>2009 – 2015</td>
+            </tr>
+            <tr>
+              <td>SMP</td>
+              <td>SMP Kawung 1 Surabaya</td>
+              <td>2015 – 2018</td>
+            </tr>
+            <tr>
+              <td>SMA</td>
+              <td>SMA Kawung 1 Surabaya</td>
+              <td>2018 – 2021</td>
+            </tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== GALERI / GAMBAR ===== -->
+    <section id="galeri" class="mb-5">
+      <h2 class="section-title">Galeri</h2>
+      <div class="card p-4">
+        <div class="row g-3">
+          <!-- Gambar 1 -->
+          <div class="col-md-4 text-center">
+            <img src="gambar1.jpg" alt="Kegiatan Olahraga"
+              class="img-fluid rounded"
+              style="height:180px; width:100%; object-fit:cover;"
+              onerror="this.src='https://placehold.co/300x180?text=Olahraga'" />
+            <p class="mt-2 text-muted">Kegiatan Olahraga</p>
+          </div>
+          <!-- Gambar 2 -->
+          <div class="col-md-4 text-center">
+            <img src="gambar2.jpg" alt="Kegiatan Membaca"
+              class="img-fluid rounded"
+              style="height:180px; width:100%; object-fit:cover;"
+              onerror="this.src='https://placehold.co/300x180?text=Membaca'" />
+            <p class="mt-2 text-muted">Kegiatan Membaca</p>
+          </div>
+          <!-- Gambar 3 -->
+          <div class="col-md-4 text-center">
+            <img src="gambar3.jpg" alt="Belajar Pemrograman"
+              class="img-fluid rounded"
+              style="height:180px; width:100%; object-fit:cover;"
+              onerror="this.src='https://placehold.co/300x180?text=Belajar'" />
+            <p class="mt-2 text-muted">Belajar Pemrograman</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KONTAK & LINK ===== -->
+    <section id="kontak" class="mb-5">
+      <h2 class="section-title">Kontak & Link</h2>
+      <div class="card p-4">
+        <!-- Tabel kontak -->
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><strong>📷 Instagram</strong></td>
+              <td>
+                <a href="https://instagram.com/ihsanulanwar" target="_blank">
+                  @ihsanulanwar
+                </a>
+              </td>
+            </tr>
+            <tr>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>💻 GitHub</strong></td>
+              <td>
+                <a href="https://github.com" target="_blank">
+                  github.com
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- ===== FOOTER ===== -->
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
